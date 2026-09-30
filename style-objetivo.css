@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f4f6f8;
+    color: #1f2937;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #1976a8;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+.slide-menu.active {
+    left: 0px;
+}
+
+.menu-toggle.active {
+    left: 155px;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #343a40;
+    opacity: 0.97;
+    transition: left 0.3s ease;
+    z-index: 999;
+    left: -250px;
+}
+
+.slide-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+    text-align: right;
+}
+
+.slide-menu ul li {
+    font-size: 21px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.slide-menu ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: block;
+}
+
+.slide-menu ul li a:hover {
+    background-color: #1976a8;
+}
+
+.objetivo {
+    text-align: center;
+    padding-top: 50px;
+    color: #1f2937;
+}
+
+.objetivo h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #1f2937;
+}
+
+.objetivo p {
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 850px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #374151;
+}

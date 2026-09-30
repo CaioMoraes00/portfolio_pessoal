@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f4f6f8;
+}
+.menu-toggle {
+    font-size: 30px;
+    padding: 10px;
+    background-color:#1976a8;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    transition: left 0.3;
+    z-index: 1000;
+}
+.slide-menu.active{
+    left: 0px;
+}
+.menu-toggle.active{
+    left: 155px;
+}
+.slide-menu{
+    position: fixed;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #343a40;
+    opacity: 0.9;
+    transition: left 0.3s ease;
+    z-index: 999;
+    left: -250px;
+}
+.slide-menu ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+    text-align: right;
+}
+.slide-menu ul li{
+    font-size: 21px;
+    padding: 15px;
+    margin-left: 10px;
+}
+.slide-menu ul li a{
+    color:  #f8f9fa;
+    text-decoration: none;
+    display: block;
+}
+.slide-menu ul li a:hover{
+    background-color:#1976a8;
+}
+.header {
+    color: rgb(20, 20, 20);
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+.banner{
+    background-color: #8a7f7d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1.0s ease, transform 1.0s ease;
+    animation: fadeIndDown 1.0s forwards;
+}
+@keyframes fadeIndDown{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.content{
+    padding: 20px;
+
+}
+.Caio {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.titulo {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin: 5px 0 15px;
+    text-align: center;
+    color: #1f2937;
+}
+
+.descricao {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #374151;
+}
